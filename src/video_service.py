@@ -18,14 +18,7 @@ class VideoService:
             videos_list = json.load(json_file)
         ids = [x['youtubeID'] for x in videos_list]
 
-        youtube = googleapiclient.discovery.build(
-            "youtube", "v3", developerKey=API_KEY)
-        request = youtube.videos().list(
-            part="snippet,contentDetails,statistics",
-            id=','.join(ids)
-        )
-
-        response = request.execute()
+        response = self.call_youtube(ids)
 
         for video in videos_list:
             youtube_record = [x for x in response['items'] if x['id'] == video['youtubeID']][0]
@@ -34,4 +27,17 @@ class VideoService:
             published_day = parser.parse(youtube_record['snippet']['publishedAt']).date()
             days_available = today - published_day
             video['monthlyViews'] = video['views'] * 365.0 / days_available.days / 12
+
         return json.dumps(videos_list)
+
+    def call_youtube(self, ids):
+        youtube = googleapiclient.discovery.build(
+            "youtube", "v3", developerKey=API_KEY)
+        request = youtube.videos().list(
+            part="snippet,contentDetails,statistics",
+            id=','.join(ids)
+        )
+        return request.execute()
+
+    def get_today(self):
+        return date.today()
