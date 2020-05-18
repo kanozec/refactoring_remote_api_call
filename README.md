@@ -5,7 +5,7 @@ https://developers.google.com/youtube/v3/getting-started?hl=zh-tw
 
 # Purpose
 1. Read youtube videos list from videos.json.
-2. Retrive the video detail through youtube data API by ID.
+2. Retrive the video details through youtube data API by ID.
 The youtube resopnse would be
 ```json
 {
@@ -69,6 +69,7 @@ The youtube resopnse would be
     "resultsPerPage": 3
   }
 }
+```
 3. Enrich the video in videos list, such as "views" and "monthlyViews".
 The output json would be
 ```json
@@ -89,3 +90,4 @@ The output json would be
     "monthlyViews": 1787967.7083333333
   }
 ]
+```
