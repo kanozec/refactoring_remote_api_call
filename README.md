@@ -3,6 +3,9 @@
 ### follow the link below and check out step 3.
 https://developers.google.com/youtube/v3/getting-started?hl=zh-tw
 
+### Ref
+https://martinfowler.com/articles/refactoring-external-service.html
+
 # Purpose
 1. Read youtube videos list from videos.json.
 2. Retrive the video details through youtube data API by ID.
@@ -91,3 +94,9 @@ The output json would be
   }
 ]
 ```
+
+#
+[](https://martinfowler.com/articles/refactoring-external-service/no-sep.png)
+[](https://martinfowler.com/articles/refactoring-external-service/sep-connection.png)
+[](https://martinfowler.com/articles/refactoring-external-service/gateway-sketch.png)
+[](https://martinfowler.com/articles/refactoring-external-service/sep-gateway.png)
