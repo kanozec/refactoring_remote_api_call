@@ -95,8 +95,11 @@ The output json would be
 ]
 ```
 
-#
+### Step 1.
 ![](https://martinfowler.com/articles/refactoring-external-service/no-sep.png)
+### Skin and Warp API
 ![](https://martinfowler.com/articles/refactoring-external-service/sep-connection.png)
+### Use gateway to translate data
 ![](https://martinfowler.com/articles/refactoring-external-service/gateway-sketch.png)
 ![](https://martinfowler.com/articles/refactoring-external-service/sep-gateway.png)
+### Seperate the domain logic
