@@ -96,7 +96,7 @@ The output json would be
 ```
 
 #
-[](https://martinfowler.com/articles/refactoring-external-service/no-sep.png)
-[](https://martinfowler.com/articles/refactoring-external-service/sep-connection.png)
-[](https://martinfowler.com/articles/refactoring-external-service/gateway-sketch.png)
-[](https://martinfowler.com/articles/refactoring-external-service/sep-gateway.png)
+![](https://martinfowler.com/articles/refactoring-external-service/no-sep.png)
+![](https://martinfowler.com/articles/refactoring-external-service/sep-connection.png)
+![](https://martinfowler.com/articles/refactoring-external-service/gateway-sketch.png)
+![](https://martinfowler.com/articles/refactoring-external-service/sep-gateway.png)
